@@ -58,11 +58,21 @@ Toxic-Avenger:Prac_Uni1 ToxicAvenger$ cd ~
 Toxic-Avenger:~ ToxicAvenger$ 
 
 ```
-Háganlo en sus compus (terminales). Noten que `ToxicAvenger` es **mi** nombre de usuario, entonces el path absoluto tiene que llevar **su nombre de usuario**.
+Háganlo en sus compus (terminales). Noten que `ToxicAvenger` es **mi** nombre de usuario, entonces el path absoluto tiene que llevar **su nombre de usuario**. Para esto es necesario clonar el repositorio con `git`
+
+`git clone https://github.com/Microfred/CCG_curso.git`
+
+Ahora sí manos a la obra...
 
 Ejemplo de ruta relativa:
 
 ```
+(base) Toxic-Avenger:~ ToxicAvenger$ cd CCG_curso/
+Toxic-Avenger:CCG_curso ToxicAvenger$ ls 
+LICENSE			Prac_Uni1		README_practica_1.md
+(base) Toxic-Avenger:CCG_curso ToxicAvenger$ cd Prac_Uni1/
+(base) Toxic-Avenger:Prac_Uni1 ToxicAvenger$ pwd
+/Users/ToxicAvenger/CCG_curso/Prac_Uni1
 Toxic-Avenger:Prac_Uni1 ToxicAvenger$ 
 Toxic-Avenger:Prac_Uni1 ToxicAvenger$ ls
 Maiz		Manzanas	Peras		Tomates
@@ -75,11 +85,13 @@ Toxic-Avenger:Maiz ToxicAvenger$
 `~` es una especie de ruta corta a la ruta absoluta de tu directorio home. No importa dónde estés `cd ~` o `cd $HOME` te llevará a home. 
 
 ```
-Toxic-Avenger:~ ToxicAvenger$ cd Documents/GitHub/Unidad_1/Prac_Uni1/
+Toxic-Avenger:~ ToxicAvenger$ cd CCG_curso
 Toxic-Avenger:Prac_Uni1 ToxicAvenger$ cd ~
 Toxic-Avenger:~ ToxicAvenger$ 
 
-Toxic-Avenger:~ ToxicAvenger$ cd Documents/GitHub/Unidad_1/Prac_Uni1/
+Toxic-Avenger:~ ToxicAvenger$ cd Prac_Uni1 ToxicAvenger$ pwd
+Toxic-Avenger:Prac_Uni1 ToxicAvenger$ pwd
+/Users/ToxicAvenger/CCG_curso/Prac_Uni1
 Toxic-Avenger:Prac_Uni1 ToxicAvenger$ cd $HOME
 Toxic-Avenger:~ ToxicAvenger$ 
 ```
